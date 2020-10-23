@@ -44,7 +44,7 @@
 
                     </div>
                     <div class="p-6">
-                        <p>Всем привет и тд.</p>
+                        <p>Всем привет и тд. </p>
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit ipsa iste quam quas unde. Ad adipisci, beatae distinctio enim exercitationem explicabo libero magnam maiores qui sint. Asperiores exercitationem nostrum porro.
                         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit ipsa iste quam quas unde. Ad adipisci, beatae distinctio enim exercitationem explicabo libero magnam maiores qui sint. Asperiores exercitationem nostrum porro.
                         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit ipsa iste quam quas unde. Ad adipisci, beatae distinctio enim exercitationem explicabo libero magnam maiores qui sint. Asperiores exercitationem nostrum porro.</p>
