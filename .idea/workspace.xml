@@ -1,8 +1,31 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="1bad8893-e0cd-4fda-bbbf-f1038be04d9e" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/about.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/news.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/welcome.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/welcome.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -10,7 +33,7 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="ComposerSettings" synchronizationState="SYNCHRONIZE">
-    <pharConfigPath>$PROJECT_DIR$/composer.json</pharConfigPath>
+    <pharConfigPath>D:\_code\laravel\composer.json</pharConfigPath>
     <execution />
   </component>
   <component name="FileTemplateManagerImpl">
@@ -23,7 +46,18 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="PhpWorkspaceProjectConfiguration">
+  <component name="PhpDebugGeneral" max_simultaneous_connections="1" />
+  <component name="PhpServers">
+    <servers>
+      <server host="http:\\laravel.local" id="8a273f9c-a29e-4d51-9cc5-ea0e0c835f47" name="http:\\laravel.local" use_path_mappings="true">
+        <path_mappings>
+          <mapping local-root="$PROJECT_DIR$" remote-root="/home/vagrant/code/laravel" />
+        </path_mappings>
+      </server>
+    </servers>
+  </component>
+  <component name="PhpWebServerValidation" path_to_validation_script="D:\_code\laravel" selected_validation_type="REMOTE" web_path_to_validation_script="http://127.0.0.1/" />
+  <component name="PhpWorkspaceProjectConfiguration" interpreter_name="Remote PHP 7.4">
     <include_path>
       <path value="$PROJECT_DIR$/vendor/ralouphie/getallheaders" />
       <path value="$PROJECT_DIR$/vendor/sebastian/code-unit" />
@@ -157,12 +191,19 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/resources/views" />
     <property name="nodejs_package_manager_path" value="npm" />
+    <property name="restartRequiresConfirmation" value="false" />
+    <property name="settings.editor.selected.configurable" value="reference.webide.settings.project.settings.php" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\_code\laravel\resources\views" />
+    </key>
+  </component>
   <component name="RunManager">
-    <configuration name="phpunit.xml" type="PHPUnitRunConfigurationType" factoryName="PHPUnit">
-      <TestRunner scope="XML" />
+    <configuration name="http:\\laravel.local" type="PhpRemoteDebugRunConfigurationType" factoryName="PHP Remote Debug" filter_connections="FILTER" server_name="http:\\laravel.local" session_id="PHPSTORM">
       <method v="2" />
     </configuration>
   </component>
@@ -174,7 +215,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1603370437101</updated>
-      <workItem from="1603370438135" duration="2866000" />
+      <workItem from="1603370438135" duration="23212000" />
     </task>
     <task id="LOCAL-00001" summary="Laravel. Начало">
       <created>1603375593767</created>
@@ -190,48 +231,153 @@
       <option name="project" value="LOCAL" />
       <updated>1603375801217</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Laravel. Начало">
+      <created>1603375879098</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1603375879098</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Laravel. Начало" />
     <option name="LAST_COMMIT_MESSAGE" value="Laravel. Начало" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="585" y="100" key="CommitChangelistDialog2" timestamp="1603375800584">
+    <state x="435" y="57" width="966" height="690" key="#CLI_Interpreters" timestamp="1603433617197">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="585" y="100" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1603375800584" />
-    <state x="740" y="275" key="FileChooserDialogImpl" timestamp="1603374156850">
+    <state x="435" y="57" width="966" height="690" key="#CLI_Interpreters/0.0.1920.1040@0.0.1920.1040" timestamp="1603433617197" />
+    <state x="648" y="122" key="#Docker" timestamp="1603432294450">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="740" y="275" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1603374156850" />
-    <state width="1877" height="282" key="GridCell.Tab.0.bottom" timestamp="1603375474951">
+    <state x="648" y="122" key="#Docker/0.0.1920.1040@0.0.1920.1040" timestamp="1603432294450" />
+    <state x="667" y="244" key="#PHP" timestamp="1603389148195">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="282" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1603375474951" />
-    <state width="1877" height="282" key="GridCell.Tab.0.center" timestamp="1603375474951">
+    <state x="667" y="244" key="#PHP/0.0.1920.1040@0.0.1920.1040" timestamp="1603389148195" />
+    <state x="540" y="206" width="838" height="690" key="#Servers" timestamp="1603430049148">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="282" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1603375474951" />
-    <state width="1877" height="282" key="GridCell.Tab.0.left" timestamp="1603375474951">
+    <state x="540" y="206" width="838" height="690" key="#Servers/0.0.1920.1040@0.0.1920.1040" timestamp="1603430049148" />
+    <state x="414" y="6" width="1276" height="1034" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1603431294547">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="282" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1603375474951" />
-    <state width="1877" height="282" key="GridCell.Tab.0.right" timestamp="1603375474951">
+    <state x="414" y="6" width="1276" height="1034" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1603431294547" />
+    <state x="675" y="342" key="#com.jetbrains.php.debug.validation.PhpWebServerValidationDialog#" timestamp="1603390994689">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="282" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1603375474951" />
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1603375632610">
+    <state x="675" y="342" key="#com.jetbrains.php.debug.validation.PhpWebServerValidationDialog#/0.0.1920.1040@0.0.1920.1040" timestamp="1603390994689" />
+    <state x="585" y="100" key="CommitChangelistDialog2" timestamp="1603375878427">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1603375632610" />
+    <state x="585" y="100" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1603375878427" />
+    <state x="659" y="281" key="ComposerInitDialogKey" timestamp="1603432571636">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="659" y="281" key="ComposerInitDialogKey/0.0.1920.1040@0.0.1920.1040" timestamp="1603432571636" />
+    <state x="740" y="275" key="FileChooserDialogImpl" timestamp="1603432568307">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="740" y="275" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1603432568307" />
+    <state width="1921" height="302" key="GridCell.Tab.0.bottom" timestamp="1603434556056">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1921" height="302" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1603434556056" />
+    <state width="1921" height="302" key="GridCell.Tab.0.center" timestamp="1603434556056">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1921" height="302" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1603434556056" />
+    <state width="1921" height="302" key="GridCell.Tab.0.left" timestamp="1603434556056">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1921" height="302" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1603434556056" />
+    <state width="1921" height="302" key="GridCell.Tab.0.right" timestamp="1603434556056">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1921" height="302" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1603434556056" />
+    <state width="1921" height="302" key="GridCell.Tab.1.bottom" timestamp="1603434556056">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1921" height="302" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1603434556056" />
+    <state width="1921" height="302" key="GridCell.Tab.1.center" timestamp="1603434556056">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1921" height="302" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1603434556056" />
+    <state width="1921" height="302" key="GridCell.Tab.1.left" timestamp="1603434556056">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1921" height="302" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1603434556056" />
+    <state width="1921" height="302" key="GridCell.Tab.1.right" timestamp="1603434556056">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1921" height="302" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1603434556056" />
+    <state width="1921" height="302" key="GridCell.Tab.2.bottom" timestamp="1603434556056">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1921" height="302" key="GridCell.Tab.2.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1603434556056" />
+    <state width="1921" height="302" key="GridCell.Tab.2.center" timestamp="1603434556056">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1921" height="302" key="GridCell.Tab.2.center/0.0.1920.1040@0.0.1920.1040" timestamp="1603434556056" />
+    <state width="1921" height="302" key="GridCell.Tab.2.left" timestamp="1603434556056">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1921" height="302" key="GridCell.Tab.2.left/0.0.1920.1040@0.0.1920.1040" timestamp="1603434556056" />
+    <state width="1921" height="302" key="GridCell.Tab.2.right" timestamp="1603434556056">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1921" height="302" key="GridCell.Tab.2.right/0.0.1920.1040@0.0.1920.1040" timestamp="1603434556056" />
+    <state x="356" y="47" key="SettingsEditor" timestamp="1603433618527">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="356" y="47" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1603433618527" />
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1603375889776">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1603375889776" />
+    <state x="816" y="418" key="WebDeployment.AddServerDialog.v.1" timestamp="1603390992489">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="816" y="418" key="WebDeployment.AddServerDialog.v.1/0.0.1920.1040@0.0.1920.1040" timestamp="1603390992489" />
     <state x="777" y="434" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1603375811506">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="777" y="434" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1920.1040@0.0.1920.1040" timestamp="1603375811506" />
+    <state x="512" y="249" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2" timestamp="1603392715472">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="512" y="249" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2/0.0.1920.1040@0.0.1920.1040" timestamp="1603392715472" />
+    <state x="0" y="0" key="com.jetbrains.php.config.phpInfo.PhpInfo.PhpInfoDialog" timestamp="1603432910727">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="0" y="0" key="com.jetbrains.php.config.phpInfo.PhpInfo.PhpInfoDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1603432910727" />
+    <state x="744" y="132" width="430" height="539" key="ftp.server.browser" timestamp="1603432992043">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="744" y="132" width="430" height="539" key="ftp.server.browser/0.0.1920.1040@0.0.1920.1040" timestamp="1603432992043" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <default-breakpoints>
+        <breakpoint enabled="true" type="javascript-exception" />
+      </default-breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
