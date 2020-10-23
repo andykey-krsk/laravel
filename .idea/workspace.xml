@@ -16,16 +16,17 @@
         <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
       </path>
     </expand>
-    <select />
+    <select>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="BRANCH:lesson_1" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1bad8893-e0cd-4fda-bbbf-f1038be04d9e" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/resources/views/about.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/news.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="1bad8893-e0cd-4fda-bbbf-f1038be04d9e" name="Default Changelist" comment="Laravel. ДЗ_1">
       <change beforePath="$PROJECT_DIR$/resources/views/welcome.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/welcome.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -44,6 +45,11 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="master" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="PhpDebugGeneral" max_simultaneous_connections="1" />
@@ -215,7 +221,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1603370437101</updated>
-      <workItem from="1603370438135" duration="23212000" />
+      <workItem from="1603370438135" duration="23443000" />
     </task>
     <task id="LOCAL-00001" summary="Laravel. Начало">
       <created>1603375593767</created>
@@ -238,7 +244,14 @@
       <option name="project" value="LOCAL" />
       <updated>1603375879098</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Laravel. ДЗ_1">
+      <created>1603441616827</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1603441616827</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -249,7 +262,19 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="lesson_1" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
           </value>
         </entry>
       </map>
@@ -257,7 +282,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Laravel. Начало" />
-    <option name="LAST_COMMIT_MESSAGE" value="Laravel. Начало" />
+    <MESSAGE value="Laravel. ДЗ_1" />
+    <option name="LAST_COMMIT_MESSAGE" value="Laravel. ДЗ_1" />
   </component>
   <component name="WindowStateProjectService">
     <state x="435" y="57" width="966" height="690" key="#CLI_Interpreters" timestamp="1603433617197">
@@ -284,10 +310,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="675" y="342" key="#com.jetbrains.php.debug.validation.PhpWebServerValidationDialog#/0.0.1920.1040@0.0.1920.1040" timestamp="1603390994689" />
-    <state x="585" y="100" key="CommitChangelistDialog2" timestamp="1603375878427">
+    <state x="585" y="100" key="CommitChangelistDialog2" timestamp="1603441788518">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="585" y="100" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1603375878427" />
+    <state x="585" y="100" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1603441788518" />
     <state x="659" y="281" key="ComposerInitDialogKey" timestamp="1603432571636">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -348,10 +374,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="356" y="47" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1603433618527" />
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1603375889776">
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1603441630103">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1603375889776" />
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1603441630103" />
     <state x="816" y="418" key="WebDeployment.AddServerDialog.v.1" timestamp="1603390992489">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
