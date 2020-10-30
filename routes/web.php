@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\Controller;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -17,10 +18,22 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/news/', function () {
-    return view('news');;
+Route::get('/about/', function () {
+    return view('about');
 });
 
-Route::get('/about/', function () {
-    return view('about');;
+Route::get('/login/', function () {
+    return view('login');
+});
+
+Route::get('/category', [Controller::class, 'category'])->name('category');
+
+Route::get('/news/category/{categoryId}', [Controller::class, 'allByCategory'])->name('category.news');
+
+Route::get('/news/{id}', [Controller::class, 'newsOne'])->name('news.id');
+
+Route::get('/news', [Controller::class, 'newsAll']);
+
+Route::fallback(function (){
+    echo "<h1 align='center'>Акела промахнулся!</h1>";
 });

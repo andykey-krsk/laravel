@@ -19,21 +19,34 @@
     <select>
       <path>
         <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="BRANCH:lesson_1" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="BRANCH:origin/master" type="e8cecc67:BranchNodeDescriptor" />
       </path>
     </select>
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1bad8893-e0cd-4fda-bbbf-f1038be04d9e" name="Default Changelist" comment="Laravel. ДЗ_1">
+      <change afterPath="$PROJECT_DIR$/resources/views/about.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/category-news.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/category.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/layouts/main.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/login.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/news-all.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Controller.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Controller.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/about.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/news.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/news.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/welcome.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/welcome.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ComposerSettings" synchronizationState="SYNCHRONIZE">
+  <component name="ComposerSettings" doNotAsk="true" synchronizationState="SYNCHRONIZE">
     <pharConfigPath>D:\_code\laravel\composer.json</pharConfigPath>
     <execution />
   </component>
@@ -41,6 +54,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="composer.json" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
@@ -194,6 +208,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
@@ -222,6 +237,8 @@
       <option name="presentableId" value="Default" />
       <updated>1603370437101</updated>
       <workItem from="1603370438135" duration="23443000" />
+      <workItem from="1603799672988" duration="13080000" />
+      <workItem from="1604029102291" duration="15757000" />
     </task>
     <task id="LOCAL-00001" summary="Laravel. Начало">
       <created>1603375593767</created>
@@ -268,7 +285,7 @@
                   <entry key="branch">
                     <value>
                       <list>
-                        <option value="lesson_1" />
+                        <option value="origin/master" />
                       </list>
                     </value>
                   </entry>
@@ -279,6 +296,7 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Laravel. Начало" />
@@ -370,10 +388,18 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1921" height="302" key="GridCell.Tab.2.right/0.0.1920.1040@0.0.1920.1040" timestamp="1603434556056" />
+    <state x="794" y="443" key="NewPhpFileDialog" timestamp="1604049128241">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="794" y="443" key="NewPhpFileDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1604049128241" />
     <state x="356" y="47" key="SettingsEditor" timestamp="1603433618527">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="356" y="47" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1603433618527" />
+    <state x="807" y="433" key="VCS.ChangelistChooser" timestamp="1603806513990">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="807" y="433" key="VCS.ChangelistChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1603806513990" />
     <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1603441630103">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -398,6 +424,14 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="744" y="132" width="430" height="539" key="ftp.server.browser/0.0.1920.1040@0.0.1920.1040" timestamp="1603432992043" />
+    <state x="720" y="309" key="git4idea.ui.GitUnstashDialog" timestamp="1603806495566">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="720" y="309" key="git4idea.ui.GitUnstashDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1603806495566" />
+    <state x="616" y="240" key="run.anything.popup" timestamp="1603816799663">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="616" y="240" key="run.anything.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1603816799663" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
