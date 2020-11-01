@@ -11,7 +11,7 @@ class Controller extends BaseController
 {
     use AuthorizesRequests, DispatchesJobs, ValidatesRequests;
 
-    private array $news = [
+    protected array $news = [
         '1' => [
             'id'        => '1',
             'categoryId'  => '1',
@@ -106,48 +106,4 @@ class Controller extends BaseController
             'photo'       => 'https://images.unsplash.com/photo-1585995603666-5bd6b348de9d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2134&q=80',
         ],
     ];
-
-    public function Category()
-    {
-        return view('category', [
-            'categories' => $this->categories,
-        ]);
-    }
-
-    public function allByCategory($categoryId)
-    {
-        if (empty($this->categories[$categoryId])) {
-            return  redirect('category');
-        }
-
-        $category = $this->categories[$categoryId];
-
-        $news = array_filter($this->news, function ($item) use ($categoryId) {
-            return $item['categoryId'] == $categoryId;
-        });
-
-        return view('category-news', compact('news', 'category'));
-    }
-
-    public function newsAll()
-    {
-        if (empty($this->news)) {
-            return  redirect('/');
-        }
-
-        $news = $this->news;
-
-        return view('news-all', compact('news'));
-    }
-
-    public function newsOne($id)
-    {
-        if (empty($this->news[$id])) {
-            return  redirect('category');
-        }
-
-        $news = $this->news[$id];
-
-        return view('news', compact('news'));
-    }
 }

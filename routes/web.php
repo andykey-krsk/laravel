@@ -1,6 +1,8 @@
 <?php
 
+use App\Http\Controllers\CategoryController;
 use App\Http\Controllers\Controller;
+use App\Http\Controllers\NewsController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -26,13 +28,13 @@ Route::get('/login/', function () {
     return view('login');
 });
 
-Route::get('/category', [Controller::class, 'category'])->name('category');
+Route::get('/category', [CategoryController::class, 'category'])->name('category');
 
-Route::get('/news/category/{categoryId}', [Controller::class, 'allByCategory'])->name('category.news');
+Route::get('/news/category/{categoryId}', [NewsController::class, 'allByCategory'])->name('category.news');
 
-Route::get('/news/{id}', [Controller::class, 'newsOne'])->name('news.id');
+Route::get('/news/{id}', [NewsController::class, 'newsOne'])->name('news.id');
 
-Route::get('/news', [Controller::class, 'newsAll']);
+Route::get('/news', [NewsController::class, 'newsAll']);
 
 Route::fallback(function (){
     echo "<h1 align='center'>Акела промахнулся!</h1>";

@@ -9,7 +9,7 @@
           crossorigin="anonymous">
     <style>
         .logo {
-            width: 30pt;
+            width: 30px;
         }
 
         nav {
