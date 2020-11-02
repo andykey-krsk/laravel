@@ -20,18 +20,15 @@
       <path>
         <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
         <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="BRANCH:master" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="BRANCH:lesson_3" type="e8cecc67:BranchNodeDescriptor" />
       </path>
     </select>
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1bad8893-e0cd-4fda-bbbf-f1038be04d9e" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/CategoryController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/NewsController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/AdminNewsController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/admin-news.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Controller.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Controller.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/layouts/main.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/main.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -274,7 +271,14 @@
       <option name="project" value="LOCAL" />
       <updated>1604053453124</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Laravel. ДЗ_3">
+      <created>1604253491224</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1604253491224</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -291,7 +295,7 @@
                   <entry key="branch">
                     <value>
                       <list>
-                        <option value="master" />
+                        <option value="lesson_3" />
                       </list>
                     </value>
                   </entry>
@@ -308,7 +312,8 @@
     <MESSAGE value="Laravel. Начало" />
     <MESSAGE value="Laravel. ДЗ_1" />
     <MESSAGE value="Laravel. ДЗ_2" />
-    <option name="LAST_COMMIT_MESSAGE" value="Laravel. ДЗ_2" />
+    <MESSAGE value="Laravel. ДЗ_3" />
+    <option name="LAST_COMMIT_MESSAGE" value="Laravel. ДЗ_3" />
   </component>
   <component name="WindowStateProjectService">
     <state x="435" y="57" width="966" height="690" key="#CLI_Interpreters" timestamp="1603433617197">
@@ -335,10 +340,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="675" y="342" key="#com.jetbrains.php.debug.validation.PhpWebServerValidationDialog#/0.0.1920.1040@0.0.1920.1040" timestamp="1603390994689" />
-    <state x="585" y="100" key="CommitChangelistDialog2" timestamp="1604053451325">
+    <state x="585" y="100" key="CommitChangelistDialog2" timestamp="1604253489632">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="585" y="100" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1604053451325" />
+    <state x="585" y="100" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1604253489632" />
     <state x="659" y="281" key="ComposerInitDialogKey" timestamp="1603432571636">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -395,10 +400,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1921" height="302" key="GridCell.Tab.2.right/0.0.1920.1040@0.0.1920.1040" timestamp="1603434556056" />
-    <state x="794" y="443" key="NewPhpFileDialog" timestamp="1604075818275">
+    <state x="794" y="443" key="NewPhpFileDialog" timestamp="1604253652840">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="794" y="443" key="NewPhpFileDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1604075818275" />
+    <state x="794" y="443" key="NewPhpFileDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1604253652840" />
     <state x="356" y="47" key="SettingsEditor" timestamp="1603433618527">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
