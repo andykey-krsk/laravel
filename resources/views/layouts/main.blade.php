@@ -45,6 +45,13 @@
                     <a class="nav-link" href="/about/">О проекте</a>
                 </li>
                 <li class="nav-item">
+                    <a class="nav-link" href="/order/">Заказ</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="/feedback/">Обратная связь</a>
+                </li>
+                <li class="nav-item">
                     <a class="nav-link" href="/login/">Вход</a>
                 </li>
             </ul>
