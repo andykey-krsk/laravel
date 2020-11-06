@@ -2,8 +2,7 @@
 
 namespace Tests\Feature;
 
-use Illuminate\Foundation\Testing\RefreshDatabase;
-use Illuminate\Foundation\Testing\WithFaker;
+use Illuminate\Support\Facades\Storage;
 use Tests\TestCase;
 
 class RouteTest extends TestCase
@@ -88,5 +87,16 @@ class RouteTest extends TestCase
         $response->assertStatus(200);
         $response->assertViewIs('admin.news.index');
         $response->assertSee('Адин-панель новостей');
+    }
+
+    public function testFeedbackStore_2()
+    {
+        Storage::fake();
+
+        $response = $this->post('/feedback/store',[
+            'name' => 'Test-name',
+            'comment' => 'Test-comment'
+        ]);
+        $response->assertSeeText('Сообщение успешно отправлено');
     }
 }
