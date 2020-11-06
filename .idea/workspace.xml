@@ -27,6 +27,7 @@
   <component name="ChangeListManager">
     <list default="true" id="1bad8893-e0cd-4fda-bbbf-f1038be04d9e" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/Feature/RouteTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/tests/Feature/RouteTest.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -231,7 +232,7 @@
       <recent name="D:\_code\laravel\resources\views" />
     </key>
   </component>
-  <component name="RunManager" selected="PHPUnit.RouteTest.testAdminNews">
+  <component name="RunManager" selected="PHPUnit.RouteTest.testFeedbackStore_2">
     <configuration name="RouteTest" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
       <TestRunner class="Tests\Feature\RouteTest" configuration_file="/home/vagrant/code/laravel/phpunit.xml" file="$PROJECT_DIR$/tests/Feature/RouteTest.php" scope="Class" />
       <method v="2" />
@@ -244,8 +245,8 @@
       <TestRunner class="Tests\Feature\RouteTest" configuration_file="/home/vagrant/code/laravel/phpunit.xml" file="$PROJECT_DIR$/tests/Feature/RouteTest.php" method="testFeedbackStore" scope="Method" />
       <method v="2" />
     </configuration>
-    <configuration name="RouteTest.testOrderJson" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
-      <TestRunner class="Tests\Feature\RouteTest" configuration_file="/home/vagrant/code/laravel/phpunit.xml" file="$PROJECT_DIR$/tests/Feature/RouteTest.php" method="testOrderJson" scope="Method" />
+    <configuration name="RouteTest.testFeedbackStore_2" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
+      <TestRunner class="Tests\Feature\RouteTest" configuration_file="/home/vagrant/code/laravel/phpunit.xml" file="$PROJECT_DIR$/tests/Feature/RouteTest.php" method="testFeedbackStore_2" scope="Method" />
       <method v="2" />
     </configuration>
     <configuration name="RouteTest.testOrderStore" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
@@ -257,11 +258,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="PHPUnit.RouteTest.testFeedbackStore_2" />
         <item itemvalue="PHPUnit.RouteTest.testAdminNews" />
         <item itemvalue="PHPUnit.RouteTest" />
         <item itemvalue="PHPUnit.RouteTest.testFeedbackStore" />
         <item itemvalue="PHPUnit.RouteTest.testOrderStore" />
-        <item itemvalue="PHPUnit.RouteTest.testOrderJson" />
       </list>
     </recent_temporary>
   </component>
@@ -341,7 +342,14 @@
       <option name="project" value="LOCAL" />
       <updated>1604665434917</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="Laravel. ДЗ_4">
+      <created>1604668314761</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1604668314761</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -410,10 +418,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="675" y="342" key="#com.jetbrains.php.debug.validation.PhpWebServerValidationDialog#/0.0.1920.1040@0.0.1920.1040" timestamp="1603390994689" />
-    <state x="585" y="100" key="CommitChangelistDialog2" timestamp="1604665434350">
+    <state x="585" y="100" key="CommitChangelistDialog2" timestamp="1604668314045">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="585" y="100" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1604665434350" />
+    <state x="585" y="100" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1604668314045" />
     <state x="659" y="281" width="447" height="274" key="ComposerInitDialogKey" timestamp="1604599534413">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -422,22 +430,22 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="740" y="275" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1604647363286" />
-    <state width="1877" height="282" key="GridCell.Tab.0.bottom" timestamp="1604665326532">
+    <state width="976" height="234" key="GridCell.Tab.0.bottom" timestamp="1604669036887">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="282" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1604665326532" />
-    <state width="1877" height="282" key="GridCell.Tab.0.center" timestamp="1604665326532">
+    <state width="976" height="234" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1604669036887" />
+    <state width="976" height="234" key="GridCell.Tab.0.center" timestamp="1604669036887">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="282" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1604665326532" />
-    <state width="1877" height="282" key="GridCell.Tab.0.left" timestamp="1604665326532">
+    <state width="976" height="234" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1604669036887" />
+    <state width="976" height="234" key="GridCell.Tab.0.left" timestamp="1604669036887">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="282" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1604665326532" />
-    <state width="1877" height="282" key="GridCell.Tab.0.right" timestamp="1604665326532">
+    <state width="976" height="234" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1604669036887" />
+    <state width="976" height="234" key="GridCell.Tab.0.right" timestamp="1604669036887">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="282" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1604665326532" />
+    <state width="976" height="234" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1604669036887" />
     <state width="1921" height="302" key="GridCell.Tab.1.bottom" timestamp="1603434556056">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -482,10 +490,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="807" y="433" key="VCS.ChangelistChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1603806513990" />
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1604665448404">
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1604668322750">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1604665448404" />
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1604668322750" />
     <state x="816" y="418" key="WebDeployment.AddServerDialog.v.1" timestamp="1603390992489">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
