@@ -20,36 +20,13 @@
       <path>
         <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
         <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="BRANCH:master" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="BRANCH:lesson_4" type="e8cecc67:BranchNodeDescriptor" />
       </path>
     </select>
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1bad8893-e0cd-4fda-bbbf-f1038be04d9e" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/FeedbackController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/OrderController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/feedback.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/order.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/Browser/ExampleTest.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/Browser/Pages/HomePage.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/Browser/Pages/Page.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/Browser/console/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/Browser/screenshots/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/DuskTestCase.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/Feature/RouteTest.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.env.example" beforeDir="false" afterPath="$PROJECT_DIR$/.env.example" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/laravel.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/laravel.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Admin/AdminNewsController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Admin/AdminNewsController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/admin/news/create.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/news/create.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/admin/news/edit.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/news/edit.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/admin/news/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/news/index.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/layouts/main.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/main.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/login.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/login.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/OrderController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/OrderController.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -349,7 +326,14 @@
       <option name="project" value="LOCAL" />
       <updated>1604284992014</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Laravel. ДЗ_4">
+      <created>1604665356448</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1604665356449</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -366,7 +350,7 @@
                   <entry key="branch">
                     <value>
                       <list>
-                        <option value="master" />
+                        <option value="lesson_4" />
                       </list>
                     </value>
                   </entry>
@@ -386,7 +370,8 @@
     <MESSAGE value="Laravel. ДЗ_2" />
     <MESSAGE value="Laravel. ДЗ_3" />
     <MESSAGE value="Laravel. ДЗ_3 начало" />
-    <option name="LAST_COMMIT_MESSAGE" value="Laravel. ДЗ_3 начало" />
+    <MESSAGE value="Laravel. ДЗ_4" />
+    <option name="LAST_COMMIT_MESSAGE" value="Laravel. ДЗ_4" />
   </component>
   <component name="WindowStateProjectService">
     <state x="435" y="57" width="966" height="690" key="#CLI_Interpreters" timestamp="1604647210949">
@@ -417,10 +402,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="675" y="342" key="#com.jetbrains.php.debug.validation.PhpWebServerValidationDialog#/0.0.1920.1040@0.0.1920.1040" timestamp="1603390994689" />
-    <state x="585" y="100" key="CommitChangelistDialog2" timestamp="1604284991546">
+    <state x="585" y="100" key="CommitChangelistDialog2" timestamp="1604665353432">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="585" y="100" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1604284991546" />
+    <state x="585" y="100" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1604665353432" />
     <state x="659" y="281" width="447" height="274" key="ComposerInitDialogKey" timestamp="1604599534413">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -429,22 +414,22 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="740" y="275" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1604647363286" />
-    <state width="1877" height="282" key="GridCell.Tab.0.bottom" timestamp="1604664876667">
+    <state width="1877" height="282" key="GridCell.Tab.0.bottom" timestamp="1604665326532">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="282" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1604664876667" />
-    <state width="1877" height="282" key="GridCell.Tab.0.center" timestamp="1604664876667">
+    <state width="1877" height="282" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1604665326532" />
+    <state width="1877" height="282" key="GridCell.Tab.0.center" timestamp="1604665326532">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="282" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1604664876667" />
-    <state width="1877" height="282" key="GridCell.Tab.0.left" timestamp="1604664876667">
+    <state width="1877" height="282" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1604665326532" />
+    <state width="1877" height="282" key="GridCell.Tab.0.left" timestamp="1604665326532">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="282" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1604664876667" />
-    <state width="1877" height="282" key="GridCell.Tab.0.right" timestamp="1604664876667">
+    <state width="1877" height="282" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1604665326532" />
+    <state width="1877" height="282" key="GridCell.Tab.0.right" timestamp="1604665326532">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="282" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1604664876667" />
+    <state width="1877" height="282" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1604665326532" />
     <state width="1921" height="302" key="GridCell.Tab.1.bottom" timestamp="1603434556056">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -489,10 +474,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="807" y="433" key="VCS.ChangelistChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1603806513990" />
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1604285022326">
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1604665387612">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1604285022326" />
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1604665387612" />
     <state x="816" y="418" key="WebDeployment.AddServerDialog.v.1" timestamp="1603390992489">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
