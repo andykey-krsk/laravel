@@ -2,44 +2,41 @@
 
 namespace App\Http\Controllers;
 
-use Illuminate\Http\Request;
+use DB;
 
 class NewsController extends Controller
 {
     public function allByCategory($categoryId)
     {
-        if (empty($this->categories[$categoryId])) {
-            return  redirect('category');
+        $news = DB::table('news')
+            ->join('categories', 'categories.id','=','news.category_id')
+            ->where('news.category_id','=',$categoryId)
+            ->get([
+               'news.*',
+               'categories.name AS category_name'
+            ]);
+
+        if (!count($news)) {
+            return  redirect('/');
         }
 
-        $category = $this->categories[$categoryId];
-
-        $news = array_filter($this->news, function ($item) use ($categoryId) {
-            return $item['categoryId'] == $categoryId;
-        });
-
-        return view('category-news', compact('news', 'category'));
+        return view('category-news', compact('news'));
     }
 
     public function newsAll()
     {
-        if (empty($this->news)) {
-            return  redirect('/');
-        }
-
-        $news = $this->news;
+        $news = DB::table('news')->select('*')->get();
 
         return view('news-all', compact('news'));
     }
 
     public function newsOne($id)
     {
-        if (empty($this->news[$id])) {
+        $news = DB::table('news')->where('id','=',$id)->get();
+
+        if (!count($news)) {
             return  redirect('category');
         }
-
-        $news = $this->news[$id];
-
         return view('news', compact('news'));
     }
 }
