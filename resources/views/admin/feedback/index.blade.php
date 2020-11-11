@@ -27,7 +27,7 @@
                 <td>{{ $feedback->updated_at }}</td>
                 <td>
                     <a href="{{ route('feedback.edit', ['feedback' => $feedback->id]) }}" class="text-dark mr-3"><i class="fa fa-pencil fa-2x" aria-hidden="true"></i><i class="fas fa-edit"></i></a>
-                    <a href="#" class="text-danger delete-button" data-type="feedbacks" data-id="{{ $feedback->id }}">
+                    <a href="#" class="text-danger delete-button" data-type="feedback" data-id="{{ $feedback->id }}">
                         <i class="fas fa-trash-alt"></i>
                     </a>
                 </td>
