@@ -23,14 +23,14 @@ class NewsController extends Controller
         return view('category-news', compact('news'));
     }
 
-    public function newsAll()
+    public function all()
     {
         $news = DB::table('news')->select('*')->get();
 
         return view('news-all', compact('news'));
     }
 
-    public function newsOne($id)
+    public function one($id)
     {
         $news = DB::table('news')->where('id','=',$id)->get();
 

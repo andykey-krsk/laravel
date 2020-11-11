@@ -1,6 +1,11 @@
 <?php
 
+use App\Http\Controllers\Admin\AdminCategoryController;
+use App\Http\Controllers\Admin\AdminController;
+use App\Http\Controllers\Admin\AdminFeedbackController;
 use App\Http\Controllers\Admin\AdminNewsController;
+use App\Http\Controllers\Admin\AdminOrderController;
+use App\Http\Controllers\Admin\AdminSourceController;
 use App\Http\Controllers\CategoryController;
 use App\Http\Controllers\FeedbackController;
 use App\Http\Controllers\NewsController;
@@ -31,12 +36,9 @@ Route::get('/login/', function () {
 });
 
 Route::get('/category', [CategoryController::class, 'category'])->name('category');
-
 Route::get('/news/category/{categoryId}', [NewsController::class, 'allByCategory'])->name('category.news');
-
-Route::get('/news/{id}', [NewsController::class, 'newsOne'])->name('news.id');
-
-Route::get('/news', [NewsController::class, 'newsAll']);
+Route::get('/news/{id}', [NewsController::class, 'one'])->name('news.id');
+Route::get('/news', [NewsController::class, 'all']);
 
 Route::prefix('/feedback')->group(function () {
     Route::get('/', [FeedbackController::class, 'index'])->name('feedback');
@@ -49,7 +51,12 @@ Route::prefix('/order')->group(function () {
 });
 
 Route::prefix('/admin')->group(function () {
+    Route::get('/', [AdminController::class,'index'])->name('admin');
     Route::resource('news', AdminNewsController::class);
+    Route::resource('feedback', AdminFeedbackController::class)->except('store');
+    Route::resource('order', AdminOrderController::class)->except('store');
+    Route::resource('category', AdminCategoryController::class)->except('store');
+    Route::resource('source', AdminSourceController::class)->except('store');
 });
 
 Route::fallback(function (){

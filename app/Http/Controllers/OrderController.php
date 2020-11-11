@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Order;
 use Illuminate\Http\Request;
 
 use Response;
@@ -16,17 +17,7 @@ class OrderController extends Controller
 
     public function store(Request $request): \Illuminate\Http\Response
     {
-        $requestData = $request->except(['_token']);
-
-        $file = [];
-
-        if (Storage::exists('order.json')) {
-            $file = json_decode(Storage::get('order.json'), true);
-        }
-        $file[] = $requestData;
-
-        Storage::put('order.json', json_encode($file));
-
+        Order::query()->create($request->except('_token'));
         return Response::view('order', ['status' => true]);
     }
 }
