@@ -15,7 +15,11 @@ class Source extends Model
 
     public $timestamps = true;
 
-    protected $dateFormat = 'U';
+    //protected $dateFormat = 'U';
 
-    protected $fillable = [];
+    protected $fillable = [
+        'title',
+        'description',
+        'url',
+    ];
 }

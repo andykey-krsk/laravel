@@ -55,8 +55,8 @@ Route::prefix('/admin')->group(function () {
     Route::resource('news', AdminNewsController::class);
     Route::resource('feedback', AdminFeedbackController::class)->except('store');
     Route::resource('order', AdminOrderController::class)->except('store');
-    Route::resource('category', AdminCategoryController::class)->except('store');
-    Route::resource('source', AdminSourceController::class)->except('store');
+    Route::resource('category', AdminCategoryController::class);
+    Route::resource('source', AdminSourceController::class);
 });
 
 Route::fallback(function (){
