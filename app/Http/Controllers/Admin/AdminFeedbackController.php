@@ -31,4 +31,12 @@ class AdminFeedbackController extends Controller
         $feedbacks->update($request->except('_token'));
         return redirect()->route('feedback.index');
     }
+
+    public function destroy($id)
+    {
+        Feedback::destroy($id);
+        return Response::json( [
+            'status' => true,
+        ]);
+    }
 }

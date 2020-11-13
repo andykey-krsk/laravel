@@ -31,4 +31,12 @@ class AdminOrderController extends Controller
         return redirect()->route('order.index');
     }
 
+    public function destroy($id)
+    {
+        Order::destroy($id);
+        return Response::json( [
+            'status' => true,
+        ]);
+    }
+
 }

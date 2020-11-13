@@ -41,4 +41,12 @@ class AdminCategoryController extends Controller
         Category::query()->create($request->except('_token'));
         return redirect()->route('category.index');
     }
+
+    public function destroy($id)
+    {
+        Category::destroy($id);
+        return Response::json( [
+            'status' => true,
+        ]);
+    }
 }
