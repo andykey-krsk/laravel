@@ -13,6 +13,7 @@
             <th scope="col">Источник</th>
             <th scope="col">Описание</th>
             <th scope="col">Адрес/Ссылка</th>
+            <th scope="col">Новостей</th>
             <th scope="col">Создан</th>
             <th scope="col">Обновлен</th>
             <th scope="col">Действие</th>
@@ -26,6 +27,7 @@
                 <td>{{ $source->title }}</td>
                 <td>{{ $source->description }}</td>
                 <td><a href="{{ $source->url }}" target="_blank">{{ $source->url }}</a>></td>
+                <td> ???? </td>
                 <td>{{ $source->created_at }}</td>
                 <td>{{ $source->updated_at }}</td>
                 <td>

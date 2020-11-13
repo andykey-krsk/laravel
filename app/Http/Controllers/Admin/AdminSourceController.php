@@ -13,6 +13,7 @@ class AdminSourceController extends Controller
     {
         return Response::view('admin.source.index', [
             'sources' => Source::query()->paginate(5),
+            //'countMews' =>,
         ]);
     }
 
@@ -41,5 +42,13 @@ class AdminSourceController extends Controller
         Source::query()->create($request->except('_token'));
         return redirect()->route('source.index');
 
+    }
+
+    public function destroy($id)
+    {
+        Source::destroy($id);
+        return Response::json( [
+            'status' => true,
+        ]);
     }
 }
