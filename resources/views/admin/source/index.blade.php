@@ -27,7 +27,7 @@
                 <td>{{ $source->title }}</td>
                 <td>{{ $source->description }}</td>
                 <td><a href="{{ $source->url }}" target="_blank">{{ $source->url }}</a>></td>
-                <td> ???? </td>
+                <td> ? </td>
                 <td>{{ $source->created_at }}</td>
                 <td>{{ $source->updated_at }}</td>
                 <td>
