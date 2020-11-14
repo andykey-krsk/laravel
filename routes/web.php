@@ -62,3 +62,7 @@ Route::prefix('/admin')->group(function () {
 Route::fallback(function (){
     echo "<h1 align='center'>Акела промахнулся!</h1>";
 });
+
+Auth::routes();
+
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');

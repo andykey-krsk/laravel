@@ -3,6 +3,11 @@
 @section('title', 'Редактирование новости')
 
 @section('content')
+    @if(isset($errors) && !empty($errors))
+        @foreach($errors->all() as $error)
+            <div class="alert alert-danger" role="alert">{{ $error }}</div>
+        @endforeach
+    @endif
     <form action="{{ route('news.update', ['news' => $news->id]) }}" method="POST">
         @csrf
         @method('PUT')

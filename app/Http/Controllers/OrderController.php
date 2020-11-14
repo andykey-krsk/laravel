@@ -2,11 +2,10 @@
 
 namespace App\Http\Controllers;
 
+use App\Http\Requests\UpsertOrderRequest;
 use App\Models\Order;
-use Illuminate\Http\Request;
 
 use Response;
-use Storage;
 
 class OrderController extends Controller
 {
@@ -15,7 +14,7 @@ class OrderController extends Controller
         return Response::view('order');
     }
 
-    public function store(Request $request): \Illuminate\Http\Response
+    public function store(UpsertOrderRequest $request)
     {
         Order::query()->create($request->except('_token'));
         return Response::view('order', ['status' => true]);
