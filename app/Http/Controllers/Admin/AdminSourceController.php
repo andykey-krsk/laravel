@@ -3,8 +3,8 @@
 namespace App\Http\Controllers\Admin;
 
 use App\Http\Controllers\Controller;
+use App\Http\Requests\UpsertSourceRequest;
 use App\Models\Source;
-use Illuminate\Http\Request;
 use Response;
 
 class AdminSourceController extends Controller
@@ -25,7 +25,7 @@ class AdminSourceController extends Controller
         ]);
     }
 
-    public function update(Request $request, $id)
+    public function update(UpsertSourceRequest $request, $id)
     {
         $source = Source::query()->findOrFail($id);
         $source->update($request->except('_token'));
@@ -37,7 +37,7 @@ class AdminSourceController extends Controller
         return Response::view('admin.source.create');
     }
 
-    public function store(Request $request)
+    public function store(UpsertSourceRequest $request)
     {
         Source::query()->create($request->except('_token'));
         return redirect()->route('source.index');

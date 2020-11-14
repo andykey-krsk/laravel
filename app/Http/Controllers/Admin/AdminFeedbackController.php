@@ -3,9 +3,8 @@
 namespace App\Http\Controllers\Admin;
 
 use App\Http\Controllers\Controller;
+use App\Http\Requests\UpsertFeedbackRequest;
 use App\Models\Feedback;
-use Illuminate\Http\Request;
-use Illuminate\Http\RedirectResponse;
 use Response;
 
 class AdminFeedbackController extends Controller
@@ -25,7 +24,7 @@ class AdminFeedbackController extends Controller
         ]);
     }
 
-    public function update(Request $request, $id)
+    public function update(UpsertFeedbackRequest $request, $id)
     {
         $feedbacks = Feedback::query()->findOrFail($id);
         $feedbacks->update($request->except('_token'));

@@ -2,11 +2,10 @@
 
 namespace App\Http\Controllers;
 
+use App\Http\Requests\UpsertFeedbackRequest;
 use App\Models\Feedback;
-use Illuminate\Http\Request;
 
 use Response;
-use Storage;
 
 class FeedbackController extends Controller
 {
@@ -15,7 +14,7 @@ class FeedbackController extends Controller
         return Response::view('feedback');
     }
 
-    public function store(Request $request): \Illuminate\Http\Response
+    public function store(UpsertFeedbackRequest $request)
     {
         Feedback::query()->create($request->except('_token'));
         return Response::view('feedback', ['status' => true]);

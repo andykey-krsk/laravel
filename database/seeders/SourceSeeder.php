@@ -25,7 +25,7 @@ class SourceSeeder extends Seeder
 
         for ($i = 0; $i < 10; $i++) {
             $data[] = [
-                'title' => $faker->realText(10),
+                'source' => $faker->realText(10),
                 'description' => $faker->realText(100),
                 'url' => $faker->imageUrl(),
             ];

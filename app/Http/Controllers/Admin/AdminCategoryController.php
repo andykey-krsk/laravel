@@ -3,8 +3,8 @@
 namespace App\Http\Controllers\Admin;
 
 use App\Http\Controllers\Controller;
+use App\Http\Requests\UpsertCategoryRequest;
 use App\Models\Category;
-use Illuminate\Http\Request;
 use Response;
 
 class AdminCategoryController extends Controller
@@ -24,7 +24,7 @@ class AdminCategoryController extends Controller
         ]);
     }
 
-    public function update(Request $request, $id)
+    public function update(UpsertCategoryRequest $request, $id)
     {
         $category = Category::query()->findOrFail($id);
         $category->update($request->except('_token'));
@@ -36,7 +36,7 @@ class AdminCategoryController extends Controller
         return Response::view('admin.category.create');
     }
 
-    public function store(Request $request)
+    public function store(UpsertCategoryRequest $request)
     {
         Category::query()->create($request->except('_token'));
         return redirect()->route('category.index');

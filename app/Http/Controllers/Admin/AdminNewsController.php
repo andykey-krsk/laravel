@@ -3,6 +3,7 @@
 namespace App\Http\Controllers\Admin;
 
 use App\Http\Controllers\Controller;
+use App\Http\Requests\UpsertNewsRequest;
 use App\Models\Category;
 use App\Models\News;
 use App\Models\Source;
@@ -37,10 +38,10 @@ class AdminNewsController extends Controller
     }
 
     /**
-     * @param Request $request
+     * @param UpsertNewsRequest $request
      * @return RedirectResponse
      */
-    public function store(Request $request)
+    public function store(UpsertNewsRequest $request)
     {
         News::query()->create($request->except(['_token']));
         return redirect()->route('news.index');
@@ -61,11 +62,11 @@ class AdminNewsController extends Controller
     }
 
     /**
-     * @param Request $request
+     * @param UpsertNewsRequest $request
      * @param $id
      * @return RedirectResponse
      */
-    public function update(Request $request, $id)
+    public function update(UpsertNewsRequest $request, $id)
     {
         $news = News::query()->findOrFail($id);
         $news->update($request->except(['_token']));
