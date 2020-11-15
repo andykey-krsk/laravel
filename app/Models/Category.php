@@ -18,7 +18,7 @@ class Category extends Model
    // protected $dateFormat = 'U';
 
     protected $fillable = [
-        'name',
+        'category',
         'description',
         'photo',
     ];
