@@ -25,7 +25,7 @@ class CategoriesSeeder extends Seeder
 
         for ($i = 0; $i < 5; $i++) {
             $data[] = [
-                'category' => $faker->realText(50),
+                'name' => $faker->realText(50),
                 'description' => $faker->realText(100),
                 'photo' => $faker->imageUrl(),
             ];

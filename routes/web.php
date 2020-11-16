@@ -6,6 +6,7 @@ use App\Http\Controllers\Admin\AdminFeedbackController;
 use App\Http\Controllers\Admin\AdminNewsController;
 use App\Http\Controllers\Admin\AdminOrderController;
 use App\Http\Controllers\Admin\AdminSourceController;
+use App\Http\Controllers\Admin\AdminUserController;
 use App\Http\Controllers\CategoryController;
 use App\Http\Controllers\FeedbackController;
 use App\Http\Controllers\NewsController;
@@ -25,20 +26,20 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
     return view('welcome');
-});
+})->name('welcome');
 
 Route::get('/about/', function () {
     return view('about');
-});
+})->name('about');
 
 Route::get('/login/', function () {
     return view('login');
-});
+})->name('login');
 
 Route::get('/category', [CategoryController::class, 'category'])->name('category');
 Route::get('/news/category/{categoryId}', [NewsController::class, 'allByCategory'])->name('category.news');
 Route::get('/news/{id}', [NewsController::class, 'one'])->name('news.id');
-Route::get('/news', [NewsController::class, 'all']);
+Route::get('/news', [NewsController::class, 'all'])->name('news');
 
 Route::prefix('/feedback')->group(function () {
     Route::get('/', [FeedbackController::class, 'index'])->name('feedback');
@@ -50,19 +51,18 @@ Route::prefix('/order')->group(function () {
     Route::post('/store', [OrderController::class, 'store'])->name('order.store');
 });
 
-Route::prefix('/admin')->group(function () {
-    Route::get('/', [AdminController::class,'index'])->name('admin');
+Route::middleware('auth')->prefix('/admin')->group(function () {
+    Route::get('/', [AdminController::class, 'index'])->name('admin');
     Route::resource('news', AdminNewsController::class);
     Route::resource('feedback', AdminFeedbackController::class)->except('store');
     Route::resource('order', AdminOrderController::class)->except('store');
     Route::resource('category', AdminCategoryController::class);
     Route::resource('source', AdminSourceController::class);
+    Route::resource('user', AdminUserController::class);
 });
 
-Route::fallback(function (){
+Route::fallback(function () {
     echo "<h1 align='center'>Акела промахнулся!</h1>";
 });
 
-Auth::routes();
-
-Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+Auth::routes(['register' => false]);

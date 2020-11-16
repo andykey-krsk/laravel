@@ -36,7 +36,7 @@
 <div class="wrapper container">
 
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <img class="logo" src="https://cdn.icon-icons.com/icons2/179/PNG/128/news_128x128-32_22252.png"
+        <img style="" src="https://cdn.icon-icons.com/icons2/179/PNG/128/news_128x128-32_22252.png"
              alt="">
         <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav">
@@ -52,7 +52,6 @@
                 <li class="nav-item">
                     <a class="nav-link" href="/order/">Заказ</a>
                 </li>
-
                 <li class="nav-item">
                     <a class="nav-link" href="/feedback/">Обратная связь</a>
                 </li>
