@@ -5,6 +5,7 @@ use App\Http\Controllers\Admin\AdminController;
 use App\Http\Controllers\Admin\AdminFeedbackController;
 use App\Http\Controllers\Admin\AdminNewsController;
 use App\Http\Controllers\Admin\AdminOrderController;
+use App\Http\Controllers\Admin\AdminParserController;
 use App\Http\Controllers\Admin\AdminSourceController;
 use App\Http\Controllers\Admin\AdminUserController;
 use App\Http\Controllers\CategoryController;
@@ -12,6 +13,7 @@ use App\Http\Controllers\FeedbackController;
 use App\Http\Controllers\NewsController;
 use App\Http\Controllers\OrderController;
 use Illuminate\Support\Facades\Route;
+use UniSharp\LaravelFilemanager\Lfm;
 
 /*
 |--------------------------------------------------------------------------
@@ -60,12 +62,19 @@ Route::middleware('auth')->prefix('/admin')->group(function () {
     Route::resource('category', AdminCategoryController::class);
     Route::resource('source', AdminSourceController::class);
 
+    Route::get('/parser', [AdminParserController::class, 'index'])->name('parser');
+
     Route::middleware('is.admin')->group(function () {
         Route::resource('user', AdminUserController::class);
         Route::get('user/password/{user}', [AdminUserController::class, 'password'])->name('user.password');
         Route::post('user/password/update/{user}',[AdminUserController::class, 'passwordUpdate'])->name('user.password.update');
     });
 });
+
+Route::group(['prefix' => 'laravel-filemanager', 'middleware' => ['web', 'auth']], function () {
+    Lfm::routes();
+});
+
 
 Route::fallback(function () {
     echo "<h1 align='center'>Акела промахнулся!</h1>";

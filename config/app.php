@@ -165,6 +165,9 @@ return [
         /*
          * Package Service Providers...
          */
+        Orchestra\Parser\XmlServiceProvider::class,
+        SocialiteProviders\Manager\ServiceProvider::class,
+
 
         /*
          * Application Service Providers...
@@ -227,6 +230,9 @@ return [
         'Validator' => Illuminate\Support\Facades\Validator::class,
         'View' => Illuminate\Support\Facades\View::class,
 
+        /** Package Facades */
+
+        'XmlParser' => Orchestra\Parser\Xml\Facade::class,
     ],
 
 ];

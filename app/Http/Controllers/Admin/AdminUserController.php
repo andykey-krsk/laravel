@@ -123,7 +123,6 @@ class AdminUserController extends Controller
         }
 
         //\Session::flash('userStore', sprintf('Пароль у пользователя %s указан не верно', $user->name));
-        //dd($request->all());
         return back()->withErrors(['Пароль у пользователя '. $user->name . ' указан не верно']);
     }
 
