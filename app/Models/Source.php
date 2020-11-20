@@ -18,7 +18,7 @@ class Source extends Model
     //protected $dateFormat = 'U';
 
     protected $fillable = [
-        'title',
+        'source',
         'description',
         'url',
     ];

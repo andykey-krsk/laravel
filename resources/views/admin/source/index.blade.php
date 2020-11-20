@@ -24,7 +24,7 @@
         @forelse($sources as $source)
             <tr>
                 <td>{{ $source->id }}</td>
-                <td>{{ $source->title }}</td>
+                <td>{{ $source->source }}</td>
                 <td>{{ $source->description }}</td>
                 <td><a href="{{ $source->url }}" target="_blank">{{ $source->url }}</a>></td>
                 <td> ? </td>

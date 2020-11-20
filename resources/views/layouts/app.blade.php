@@ -38,6 +38,14 @@
             text-align: center;
         }
 
+        .green{
+            color: darkgreen;
+        }
+
+        .red{
+            color: darkred;
+        }
+
     </style>
 </head>
 <body>

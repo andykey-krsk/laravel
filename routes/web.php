@@ -53,12 +53,18 @@ Route::prefix('/order')->group(function () {
 
 Route::middleware('auth')->prefix('/admin')->group(function () {
     Route::get('/', [AdminController::class, 'index'])->name('admin');
+
     Route::resource('news', AdminNewsController::class);
     Route::resource('feedback', AdminFeedbackController::class)->except('store');
     Route::resource('order', AdminOrderController::class)->except('store');
     Route::resource('category', AdminCategoryController::class);
     Route::resource('source', AdminSourceController::class);
-    Route::resource('user', AdminUserController::class);
+
+    Route::middleware('is.admin')->group(function () {
+        Route::resource('user', AdminUserController::class);
+        Route::get('user/password/{user}', [AdminUserController::class, 'password'])->name('user.password');
+        Route::post('user/password/update/{user}',[AdminUserController::class, 'passwordUpdate'])->name('user.password.update');
+    });
 });
 
 Route::fallback(function () {
