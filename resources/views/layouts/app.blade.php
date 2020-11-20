@@ -46,6 +46,26 @@
             color: darkred;
         }
 
+        .social-logo{
+            font-size: 36px;
+            margin-right: 10px;
+        }
+
+        .vk-color{
+            color: darkgrey;
+        }
+
+        .vk-color:hover{
+            color: #2787F5;
+        }
+
+        .fb-color{
+            color: darkgrey;
+        }
+
+        .fb-color:hover{
+            color: #3b5998;
+        }
     </style>
 </head>
 <body>
