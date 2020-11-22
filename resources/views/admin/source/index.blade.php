@@ -11,8 +11,7 @@
         <tr>
             <th scope="col">ID</th>
             <th scope="col">Источник</th>
-            <th scope="col">Описание</th>
-            <th scope="col">Адрес/Ссылка</th>
+            <th scope="col">Адрес</th>
             <th scope="col">Новостей</th>
             <th scope="col">Создан</th>
             <th scope="col">Обновлен</th>
@@ -25,8 +24,7 @@
             <tr>
                 <td>{{ $source->id }}</td>
                 <td>{{ $source->source }}</td>
-                <td>{{ $source->description }}</td>
-                <td><a href="{{ $source->url }}" target="_blank">{{ $source->url }}</a>></td>
+                <td><a href="{{ $source->url }}" target="_blank">{{ $source->url }}</a></td>
                 <td> ? </td>
                 <td>{{ $source->created_at }}</td>
                 <td>{{ $source->updated_at }}</td>

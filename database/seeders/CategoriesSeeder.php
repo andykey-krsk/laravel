@@ -21,11 +21,23 @@ class CategoriesSeeder extends Seeder
     {
         $faker = Faker\Factory::create('ru_RU');
 
+        $categories = [
+            'Авто',
+            'Спорт',
+            'Здоровье',
+            'Игры',
+            'Политика',
+            'Кино',
+            'Технологии',
+            'Культура',
+            'Музыка',
+        ];
+
         $data = [];
 
-        for ($i = 0; $i < 5; $i++) {
+        foreach ($categories as $category) {
             $data[] = [
-                'name' => $faker->realText(50),
+                'name' => $category,
                 'description' => $faker->realText(100),
                 'photo' => $faker->imageUrl(),
             ];

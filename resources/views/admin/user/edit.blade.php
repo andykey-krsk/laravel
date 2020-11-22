@@ -4,11 +4,6 @@
 
 @section('content')
     <h1>Редактировать пользователя</h1>
-    @if(isset($errors) && !empty($errors))
-        @foreach($errors->all() as $error)
-            <div class="alert alert-danger" role="alert">{{ $error }}</div>
-        @endforeach
-    @endif
     <form action="{{ route('user.update', ['user' => $user->id]) }}" method="POST">
         @csrf
         @method('PUT')

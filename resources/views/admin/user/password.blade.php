@@ -4,11 +4,6 @@
 
 @section('content')
     <h3>Изменить пароль для пользователя <strong>{{ $user->name }}</strong></h3>
-    @if(isset($errors) && !empty($errors))
-        @foreach($errors->all() as $error)
-            <div class="alert alert-danger" role="alert">{{ $error }}</div>
-        @endforeach
-    @endif
     <form action="{{ route('user.password.update', ['user' => $user->id]) }}" method="POST">
         @csrf
         <div class="row">

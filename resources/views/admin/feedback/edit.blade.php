@@ -4,11 +4,6 @@
 
 @section('content')
     <h1>Обратная связь</h1>
-    @if(isset($errors) && !empty($errors))
-        @foreach($errors->all() as $error)
-            <div class="alert alert-danger" role="alert">{{ $error }}</div>
-        @endforeach
-    @endif
     <form action="{{ route('feedback.update', ['feedback'=>$feedbacks->id]) }}" method="POST">
         @csrf
         @method('PUT')

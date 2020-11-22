@@ -12,6 +12,7 @@ use App\Http\Controllers\CategoryController;
 use App\Http\Controllers\FeedbackController;
 use App\Http\Controllers\NewsController;
 use App\Http\Controllers\OrderController;
+use App\Http\Controllers\SocialController;
 use Illuminate\Support\Facades\Route;
 use UniSharp\LaravelFilemanager\Lfm;
 
@@ -53,6 +54,12 @@ Route::prefix('/order')->group(function () {
     Route::post('/store', [OrderController::class, 'store'])->name('order.store');
 });
 
+Route::get('/auth/vk', [SocialController::class, 'loginVk'])->name('login.vk');
+Route::get('/auth/vk/response', [SocialController::class, 'responseVk'])->name('response.vk');
+
+Route::get('/auth/facebook', [SocialController::class, 'loginFacebook'])->name('login.facebook');
+Route::get('/auth/facebook/response', [SocialController::class, 'responseFacebook'])->name('response.facebook');
+
 Route::middleware('auth')->prefix('/admin')->group(function () {
     Route::get('/', [AdminController::class, 'index'])->name('admin');
 
@@ -63,6 +70,7 @@ Route::middleware('auth')->prefix('/admin')->group(function () {
     Route::resource('source', AdminSourceController::class);
 
     Route::get('/parser', [AdminParserController::class, 'index'])->name('parser');
+    Route::post('/parser/parse', [AdminParserController::class, 'parse'])->name('parser.parse');
 
     Route::middleware('is.admin')->group(function () {
         Route::resource('user', AdminUserController::class);
@@ -71,13 +79,13 @@ Route::middleware('auth')->prefix('/admin')->group(function () {
     });
 });
 
-Route::group(['prefix' => 'laravel-filemanager', 'middleware' => ['web', 'auth']], function () {
+/*Route::group(['prefix' => 'laravel-filemanager', 'middleware' => ['web', 'auth']], function () {
     Lfm::routes();
-});
+});*/
 
 
 Route::fallback(function () {
     echo "<h1 align='center'>Акела промахнулся!</h1>";
 });
 
-Auth::routes(['register' => false]);
+Auth::routes(['register' => true]);

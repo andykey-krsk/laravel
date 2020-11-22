@@ -34,6 +34,21 @@ const app = new Vue({
 let csrf = document.querySelector('meta[name="csrf-token"]').getAttribute('content');
 let deleteButtons = document.querySelectorAll('.delete-button');
 
+let parserCheckAll = document.getElementById('parser');
+parserCheckAll.addEventListener('click',checkAll);
+
+function checkAll() {
+    let i;
+    for (i = 0; i < document.formparser.elements.length; i++) {
+        if (document.formparser.parser.checked == true) {
+            document.formparser.elements[i].checked = true;
+        } else {
+            document.formparser.elements[i].checked = false;
+        }
+    }
+}
+
+
 for (let deleteButton of deleteButtons) {
     deleteButton.addEventListener('click', deleteHandler);
 }

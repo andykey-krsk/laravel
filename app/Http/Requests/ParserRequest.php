@@ -4,7 +4,7 @@ namespace App\Http\Requests;
 
 use Illuminate\Foundation\Http\FormRequest;
 
-class UpsertSourceRequest extends FormRequest
+class ParserRequest extends FormRequest
 {
     /**
      * Determine if the user is authorized to make this request.
@@ -24,8 +24,15 @@ class UpsertSourceRequest extends FormRequest
     public function rules()
     {
         return [
-            'source' => ['required', 'string', 'max:255'],
-            'url' => ['required', 'url'],
+            'sources' => ['required', 'array'],
+            'categories' => ['required', 'array'],
         ];
+    }
+
+    public function messages()
+    {
+        return array_merge(parent::messages(), [
+            'sources.required' => 'Необходимо выбрать минимум один источник',
+        ]);
     }
 }

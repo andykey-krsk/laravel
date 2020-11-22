@@ -16,7 +16,6 @@ class CreateSourcesTable extends Migration
         Schema::create('sources', function (Blueprint $table) {
             $table->id();
             $table->string('source')->nullable(false)->comment('Название источника');
-            $table->string('description',1000)->nullable(false)->default('')->comment('Описание источника');
             $table->string('url',1000)->nullable(false)->comment('Адрес источника');
             $table->timestamps();
         });

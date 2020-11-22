@@ -4,11 +4,6 @@
 
 @section('content')
     <h1>Создание рубрики</h1>
-    @if(isset($errors) && !empty($errors))
-        @foreach($errors->all() as $error)
-            <div class="alert alert-danger" role="alert">{{ $error }}</div>
-        @endforeach
-    @endif
     <form action="{{ route('category.store') }}" method="POST">
         @csrf
         <div class="form-group">
