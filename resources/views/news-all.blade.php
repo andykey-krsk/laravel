@@ -8,7 +8,6 @@
             <h1 class="text-center">Все новости</h1>
         </div>
     </div>
-
     @forelse ($news as $oneNews)
         <div class="card mb-3" >
             <div class="row no-gutters">

@@ -10,6 +10,7 @@
         </div>
     @endif
     <a href="{{ route('news.create') }}" class="btn btn-primary mb-3 float-right">Добавить новость</a>
+    {{ $news->links() }}
     <table class="table">
         <thead class="thead-light">
         <tr>
@@ -42,7 +43,8 @@
         @empty
             <h1>Нет новостей</h1>
         @endforelse
-        {{ $news->links() }}
+
         </tbody>
     </table>
+    {{ $news->links() }}
 @endsection
