@@ -32,7 +32,7 @@
                 <td>{{ $oneNews->short_text }}</td>
                 <td><img src="{{ $oneNews->photo }}" alt="" style="max-width: 300px;"></td>
                 <td>{{ $categories->get($oneNews->category_id)->name }}</td>
-                <td>{{ $sources->get($oneNews->source_id)->title }}</td>
+                <td>{{ $sources->get($oneNews->source_id)->source }}</td>
                 <td>
                     <a href="{{ route('news.edit', ['news' => $oneNews->id]) }}" class="text-dark mr-3"><i class="fa fa-pencil fa-2x" aria-hidden="true"></i><i class="fas fa-edit"></i></a>
                     <a href="#" class="text-danger delete-button" data-type="news" data-id="{{ $oneNews->id }}">

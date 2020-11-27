@@ -34,7 +34,7 @@
                 <label for="source">Источник</label>
                 <select class="form-control" id="source" name="source_id">
                     @foreach($sources as $source)
-                        <option value="{{ $source->id }}">{{ $source->id }} - {{ $source->title }}</option>
+                        <option value="{{ $source->id }}">{{ $source->id }} - {{ $source->source }}</option>
                     @endforeach
                 </select>
             </div>
@@ -48,4 +48,20 @@
             </div>
         </div>
     </form>
+
+    <script src=" {{ asset('js/ckeditor/ckeditor.js') }} "></script>
+    <script>
+        let options = {
+            filebrowserImageBrowseUrl: '/laravel-filemanager?type=Image',
+            filebrowserImageUploadUrl: '/laravel-filemanager/upload?type=Image&token=',
+            filebrowserBrowseUrl: '/laravel-filemanager?type=Files',
+            filebrowserUploadUrl: '/laravel-filemanager/upload?type=Files&token=',
+        };
+    </script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function(){
+            CKEDITOR.replace('full-text', options);
+        });
+    </script>
+
 @endsection
