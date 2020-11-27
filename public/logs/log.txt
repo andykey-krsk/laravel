@@ -15,3 +15,13 @@
 2020-11-27T16:10:54+00:00 // https://news.yandex.ru/music.rss
 2020-11-27T16:10:54+00:00 // https://news.yandex.ru/nhl.rss
 2020-11-27T16:13:19+00:00 // https://news.yandex.ru/gadgets.rss
+2020-11-27T16:23:15+00:00 // https://news.yandex.ru/army.rss
+2020-11-27T16:23:16+00:00 // https://news.yandex.ru/gadgets.rss
+2020-11-27T16:23:16+00:00 // https://news.yandex.ru/index.rss
+2020-11-27T16:23:17+00:00 // https://news.yandex.ru/martial_arts.rss
+2020-11-27T16:23:17+00:00 // https://news.yandex.ru/communal.rss
+2020-11-27T16:23:17+00:00 // https://news.yandex.ru/health.rss
+2020-11-27T16:23:18+00:00 // https://news.yandex.ru/games.rss
+2020-11-27T16:23:18+00:00 // https://news.yandex.ru/internet.rss
+2020-11-27T16:23:19+00:00 // https://news.yandex.ru/cyber_sport.rss
+2020-11-27T16:23:19+00:00 // https://news.yandex.ru/movies.rss
