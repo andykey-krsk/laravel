@@ -79,13 +79,13 @@ Route::middleware('auth')->prefix('/admin')->group(function () {
     });
 });
 
-/*Route::group(['prefix' => 'laravel-filemanager', 'middleware' => ['web', 'auth']], function () {
+Route::group(['prefix' => 'laravel-filemanager', 'middleware' => ['web', 'auth']], function () {
     Lfm::routes();
-});*/
+});
 
 
 Route::fallback(function () {
     echo "<h1 align='center'>Акела промахнулся!</h1>";
 });
 
-Auth::routes(['register' => true]);
+Auth::routes(['register' => false]);

@@ -44,7 +44,7 @@
                     @foreach($sources as $source)
                         <option value="{{ $source->id }}"
                                 @if($source->id == $news->source_id) selected @endif
-                        >{{ $source->title }}</option>
+                        >{{ $source->source }} </option>
                     @endforeach
                 </select>
             </div>
@@ -58,4 +58,19 @@
             </div>
         </div>
     </form>
+
+    <script src=" {{ asset('js/ckeditor/ckeditor.js') }} "></script>
+    <script>
+        let options = {
+            filebrowserImageBrowseUrl: '/laravel-filemanager?type=Image',
+            filebrowserImageUploadUrl: '/laravel-filemanager/upload?type=Image&token=',
+            filebrowserBrowseUrl: '/laravel-filemanager?type=Files',
+            filebrowserUploadUrl: '/laravel-filemanager/upload?type=Files&token=',
+        };
+    </script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function(){
+            CKEDITOR.replace('full-text', options);
+        });
+    </script>
 @endsection
