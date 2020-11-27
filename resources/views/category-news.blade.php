@@ -13,13 +13,15 @@
     @forelse ($news as $oneNews)
         <div class="card mb-3" >
             <div class="row no-gutters">
-                <div class="col-md-4">
-                    <img src="{{ $oneNews->photo }}" class="card-img" alt="...">
-                </div>
+                @if($oneNews->photo)
+                    <div class="col-md-4">
+                        <img src="{{ $oneNews->photo }}" class="card-img" alt="...">
+                    </div>
+                @endif
                 <div class="col-md-8">
                     <div class="card-body">
                         <h5 class="card-title"><a href="{{ route('news.id', ['id' => $oneNews->id]) }}">{{ $oneNews->title }}</a></h5>
-                        <p class="card-text">{{ $oneNews->short_text }}</p>
+                        <p class="card-text">{!! $oneNews->short_text !!}</p>
                     </div>
                 </div>
             </div>
